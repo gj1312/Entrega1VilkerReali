@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if os2 %} 
+    <ul>
+    {% for curso in os2 %} 
+        <li>Nombre Obra social: {{curso.nombre}}</li>
+        <li>Codigo: {{curso.codigo_os}}</li>
+    {% endfor %} 
+    </ul>
+
+    {% else %} 
+
+        <p>No se encotro nada</p>
+
+    {% endif %}
+
+
+
+
+
+
+
+    </ul>
+
+
+</body>
+</html>

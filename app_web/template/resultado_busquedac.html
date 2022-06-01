@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if clientes2 %} 
+    <ul>
+    {% for curso in clientes2 %} 
+        <li>Nombre: {{curso.nombre}}</li>
+        <li>Fecha de nacimiento: {{curso.nacimiento}}</li>
+    {% endfor %} 
+    </ul>
+
+    {% else %} 
+
+        <p>No se encotro nada</p>
+
+    {% endif %}
+
+
+
+
+
+
+
+    </ul>
+
+
+</body>
+</html>
